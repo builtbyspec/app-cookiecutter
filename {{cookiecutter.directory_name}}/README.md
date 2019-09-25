@@ -1,4 +1,4 @@
-# {{cookiecutter.project_name}}
+## {{cookiecutter.project_name}}
 
 ## Usage
 1. Install necessary libraries if missing
