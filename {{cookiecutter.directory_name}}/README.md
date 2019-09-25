@@ -3,19 +3,35 @@
 ## Usage
 1. Install necessary libraries if missing
    ```
-    pip install dash==1.3.0  # The core dash backend
-    pip install dash-daq==0.2.1  
+    pip install dash
+    pip install dash-daq
     pip install dash-bootstrap-components
     pip install pandas
+    pip install gunicorn
    ```  
 
 ## Running Locally
-- Navifate to folder containing app.py
+- Navigate to folder containing app.py
 - Run:
   ```
   python app.py
   ```
 - Visit `http:127.0.0.1:8050/` in your web browser.
+
+## Heroku Deployment
+- Download [Heroku cli](https://devcenter.heroku.com/articles/heroku-cli)
+- Run:
+  ```
+  heroku create {{cookiecutter.project_name}}
+  git add . # add all files to git
+  git commit -m 'Initial app boilerplate'
+  git push heroku master # deploy code to heroku
+  heroku ps:scale web=1  # run the app with a 1 heroku "dyno"
+  heroku open
+  ```
+
+- You should be able to view your app at https://{{cookiecutter.project_name}}.herokuapp.com
+  
   
 ## File Structure
 - data folder should contain all data files. <br>
