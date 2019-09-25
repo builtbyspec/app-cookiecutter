@@ -19,6 +19,7 @@
 - Visit `http:127.0.0.1:8050/` in your web browser.
 
 ## Heroku Deployment
+**Note: Make sure project has a github repo before deployment**
 - Download [Heroku cli](https://devcenter.heroku.com/articles/heroku-cli)
 - Run:
   ```
