@@ -1,4 +1,6 @@
 {
   "directory_name": "new-app",
-  "project_name": "spec-app"
+  "project_name": "spec-app",
+  "article_title": "new article",
+  "article_subtitle": "article subtitle"
 }
